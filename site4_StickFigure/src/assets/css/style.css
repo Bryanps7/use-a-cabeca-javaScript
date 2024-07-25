@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#lala {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: auto ;
+}
+
+#decision1{
+    margin: 0 5px;
+}

@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+.divRock {
+    margin-top: 100px;
+}
+
+#rockImg {
+    cursor: pointer;
+}
