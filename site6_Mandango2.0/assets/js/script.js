@@ -19,8 +19,9 @@ function initSeats() {
   }
 }
 
-function(seatNum, status, description){
-  
+function setSeat (seatNum, status, description){
+  document.getElementById('seat'+seatNum).src = 'seat_' + status + '.png'
+  document.getElementById('seat'+seatNum).alt = description
 }
 
 function buscaPoltronas(){
@@ -34,6 +35,8 @@ function buscaPoltronas(){
         for (let j = 0; j < seats[i].length; j++) {
           if (seats[i][j] && seats[i][j + 1] && seats[i][j + 2]) {
             selSeat = i * seats[i].length + j;
+            setSeat(i * seats[i].length + j, 'select', 'Sua poltrona')
+
             document.getElementById("seat" + (i * seats[i].length + j)).src = "/assets/img/seat_select.png";
             document.getElementById("seat" + (i * seats[i].length + j)).alt = "Selecionado";
             document.getElementById("seat" + (i * seats[i].length + j + 1)).src = "/assets/img/seat_select.png";
