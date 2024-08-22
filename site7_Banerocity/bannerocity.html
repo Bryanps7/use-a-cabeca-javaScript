@@ -20,12 +20,12 @@
     <form name="orderform" action="bannerocity.php" method="POST">
       <div class="field">
         Insira sua memsagem:
-        <input id="message" name="message" type="text" size="32" onblur="validateNonEmpty(this, document.getElementById('message_help'))" />
+        <input id="message" name="message" type="text" size="32" onblur="validateNonEmpty(1, 32, this, document.getElementById('message_help'))" />
         <span id="message_help" class="help"></span>
       </div>
       <div class="field">
         Insira o CEP:
-        <input id="zipcode" name="zipcode" type="text" size="5" onblur="validateNonEmpty(this, document.getElementById('zipcode_help'))" />
+        <input id="zipcode" name="zipcode" type="number" size="8" onblur="validateNonEmpty(1, 8, this, document.getElementById('zipcode_help'))" />
         <span id="zipcode_help" class="help"></span>
       </div>
       <div class="field">
